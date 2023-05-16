@@ -11,30 +11,32 @@
     </head>
 
     <body>
-        <header class="cabecalho">
-            <div class="logo">
-                <img src="images/logo.svg">
-                <h2><span>MED</span>CONNECT</h2>
-            </div>
-            <nav class="menu-navegacao">
-                <ul class="lista">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobreNos.html">Sobre nós</a></li>
-                    <li><a href="contatos.html">Contatos</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="imagem-de-fundo" >
+            <header class="cabecalho">
+                <div class="logo">
+                    <img src="images/logo.svg">
+                    <h2><span>MED</span>CONNECT</h2>
+                </div>
+                <nav class="menu-navegacao">
+                    <ul class="lista">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobreNos.html">Sobre nós</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <main>
-            <div class="texto-pesquisa">
-                <h1>Bem vindo ao seu buscador de remédios</h1>
-            </div>
-            <form class="formulario-pesquisa">
-                <input id="barra-pesquisa"  type="text" placeholder="Digite o nome do medicamento aqui..." required/>
-                <input id="botao-pesquisa"  type="submit" onclick="pesquisa(event) ; return false" value="Pesquisar"/>
-            </form>
-        </main>
+            <main>
+                <div class="texto-pesquisa">
+                    <h1>Bem vindo ao seu buscador de remédios</h1>
+                </div>
+                <form class="formulario-pesquisa">
+                    <input id="barra-pesquisa"  type="text" placeholder="Digite o nome do medicamento aqui..." required/>
+                    <input id="botao-pesquisa"  type="submit" onclick="pesquisa(event) ; return false" value="Pesquisar"/>
+                </form>
+            </main>
 
-        <script src="script.js"></script>
+            <script src="script.js"></script>
+        </div>
     </body>
 </html>
