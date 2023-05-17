@@ -3,18 +3,7 @@ body{
     font-size:16px;
 }
 
-/*Inicio home*/
-.imagem-de-fundo{
-    background-image: url("../images/imagemDeFundo.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    width:100vw;
-}
-/*Fim home*/
 
-/*Inicio Sobre Nos*/
 .sobreNosFundo{
     background-image: url("../images/sobreNos.png");
     background-repeat: no-repeat;
@@ -24,13 +13,7 @@ body{
     width:100vw;
 }
 
-main > .sobreNosApresentacao{
-    margin:20px;
-    display:flex;
-    align-items:center;
-}
 
-/*Fim Sobre Nos*/
 
 /*Início cabeçalho*/
 .cabecalho{
@@ -93,50 +76,30 @@ main > .sobreNosApresentacao{
 
 /*Fim cabeçalho*/
 
+main{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+}
 
-.texto-pesquisa h1{
-    margin: 20px auto;
+.apresentacao{
+    background-color:rgba(255, 255, 255, 0.4);
+    border-radius:10px;
+    padding:20px;
     text-align: center;
+    width:480px;
+}
+
+.apresentacao > h2{
+    font-weight: bold;
     font-size: 1.5rem;
 }
 
-.formulario-pesquisa{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-form > #barra-pesquisa{
-    background-color: #ffffff;
-    width:80%;
-    height:3vw;
-    margin: 20% 10% 5px;
-    text-indent: 5px;
-    border:2px solid #a5d0dd;
-    border-radius: 10px;
-}
-
-form > #botao-pesquisa{
-    margin:auto;
-    width:150px;
-    height: 30px;
-    border-radius: 5px;
-    border:2px solid #a5d0dd;
-}
-
-form > #botao-pesquisa:hover{
-    background-color: #04707e; 
-    color:white;
-    border:2px solid #04707e;
+.mensagem{
+    text-align:justify;
 }
 
 @media screen and(max-width:600px){
-    form{
-        width:90%;
-        padding:15px;
-    }
-
-    input{
-        height:25px;
-    }
+   
 }
