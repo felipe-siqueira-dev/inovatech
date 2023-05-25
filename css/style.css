@@ -45,9 +45,7 @@ main > .sobreNosApresentacao{
 .logo{
     width:60%;
     display: flex;
-    flex-wrap: wrap;
     align-items:center;
-    justify-content:flex-start;
 }
 
 .logo img{
@@ -74,16 +72,13 @@ main > .sobreNosApresentacao{
     justify-content: space-evenly;
 }
 
-.lista > li > a{
+.lista  a{
     text-decoration-line: none;
     color: #000000;
+    padding: 10px;
 }
 
-.lista > li > a{
-    padding:10px;
-}
-
-.lista > li > a:hover{
+.lista a:hover{
     border-radius: 10px;
     background-color:#04707e;
     color:#ffffff;
@@ -106,17 +101,17 @@ main > .sobreNosApresentacao{
 }
 
 
-form > #barra-pesquisa{
+form #barra-pesquisa{
     background-color: #ffffff;
     width:80%;
-    height:3vw;
+    height:3.2vw;
     margin: 20% 10% 5px;
     text-indent: 5px;
     border:2px solid #a5d0dd;
     border-radius: 10px;
 }
 
-form > #botao-pesquisa{
+form #botao-pesquisa{
     margin:auto;
     width:150px;
     height: 30px;
@@ -124,19 +119,40 @@ form > #botao-pesquisa{
     border:2px solid #a5d0dd;
 }
 
-form > #botao-pesquisa:hover{
+form  #botao-pesquisa:hover{
     background-color: #04707e; 
     color:white;
     border:2px solid #04707e;
 }
 
-@media screen and(max-width:600px){
-    form{
-        width:90%;
-        padding:15px;
+@media screen and (max-width:480px){
+    .cabecalho{
+        height: 120px;
+        flex-wrap: wrap;
     }
 
-    input{
-        height:25px;
+    .logo{
+        display: inline-block;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .menu-navegacao{
+        width: 100%;
+        margin:10px;
+    }
+
+    .lista{
+        flex-wrap: nowrap;
+    }
+
+    .formulario-pesquisa{
+        width:100%;
+        padding:15px;
+        box-sizing: border-box;
+    }
+
+    form #barra-pesquisa{
+        height:40px;
     }
 }
