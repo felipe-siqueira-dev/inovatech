@@ -1,10 +1,9 @@
 body{
     font-family:Verdana,Tahoma;
-    background-color:#b4dce2;
     font-size:16px;
-    width:100%;
 }
 
+/*Inicio home*/
 .imagem-de-fundo{
     background-image: url("../images/imagemDeFundo.jpeg");
     background-repeat: no-repeat;
@@ -13,7 +12,25 @@ body{
     height: 100vh;
     width:100vw;
 }
+/*Fim home*/
 
+/*Inicio Sobre Nos*/
+.sobreNosFundo{
+    background-image: url("../images/sobreNos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width:100vw;
+}
+
+main > .sobreNosApresentacao{
+    margin:20px;
+    display:flex;
+    align-items:center;
+}
+
+/*Fim Sobre Nos*/
 
 /*Início cabeçalho*/
 .cabecalho{
@@ -28,9 +45,7 @@ body{
 .logo{
     width:60%;
     display: flex;
-    flex-wrap: wrap;
     align-items:center;
-    justify-content: flex-start;
 }
 
 .logo img{
@@ -57,7 +72,7 @@ body{
     justify-content: space-evenly;
 }
 
-.lista a{
+.lista  a{
     text-decoration-line: none;
     color: #000000;
     padding: 10px;
@@ -72,43 +87,6 @@ body{
 /*Fim nav bar*/
 
 /*Fim cabeçalho*/
-
-.texto{
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.container{
-    width:100%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.card1{
-    background-color: rgba(255,255,255,0.4) ;
-    border: solid 2px rgba(255,255,255,0.4);
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    width:65%;
-}
-.photo-card{
-    height:80px;
-    border-right: solid 2px rgba(14, 2, 2, 0.4);
-}
-
-.card{
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-span{
-    font-weight: bold;
-}
 
 
 @media screen and (max-width:480px){
@@ -132,7 +110,4 @@ span{
         flex-wrap: nowrap;
     }
 
-    .card1{
-        width:90%;
-    }
 }
